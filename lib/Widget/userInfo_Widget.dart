@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mycar/home/homescreen.dart';
 import 'package:mycar/setting.dart/termsOfUse.dart';
 import '../model/userprofile_model.dart';
 
@@ -143,8 +144,11 @@ Widget buildInfo(User user) => Padding(
             thickness: 2,
           ),
           Center(
-              child:
-                  ElevatedButton(onPressed: () {}, child: Text("تسجيل خروج"))),
+              child: ElevatedButton(
+                  onPressed: () {
+                    Get.to(HomeScreen());
+                  },
+                  child: Text("تسجيل خروج"))),
           Divider(
             height: 30,
             thickness: 1,

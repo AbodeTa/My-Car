@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:mycar/auth/login.dart';
-import 'package:mycar/auth/paymentPage.dart';
+import 'package:mycar/home/homescreen.dart';
 
 abstract class SignUpController extends GetxController {
   signup();
@@ -19,7 +19,7 @@ class SignUoControllerImp extends SignUpController {
   signup() {
     var formdata = formstate.currentState;
     if (formdata!.validate()) {
-      Get.to(PaymentPage());
+      Get.to(HomeScreen());
     } else {
       print("Not Valid");
     }

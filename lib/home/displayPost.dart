@@ -207,14 +207,14 @@ class DisplayPost extends StatelessWidget {
                         elevation: 100,
                           shadowColor: Colors.green,
                           backgroundColor: Colors.white70,
-                          padding: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(7),
                           shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(35))),
+                              borderRadius: BorderRadius.circular(30))),
                       onPressed: () {
                         sendWhatsApp();
                       },
                       icon: Image(
-                        width: 50,
+                        width: 40,
                         image: AssetImage("images/iconWhatsApp.png"),
                       ),
                       label: Text(
